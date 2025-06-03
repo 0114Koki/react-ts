@@ -1,0 +1,38 @@
+import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router";
+import Header from "./components/Header";
+import S20attributeChange from "./pages/S20attributeChange";
+import Home from "./pages/Home";
+import React from "react";
+import S30onClickEvent from "./pages/S30onClickEvent";
+import Ex30 from "./pages/Ex30";
+import Ex50 from "./pages/Ex50";
+import Ex70 from "./pages/Ex70";
+import Ex80 from "./pages/Ex80";
+import Ex90 from "./pages/Ex90";
+import Ex100 from "./pages/Ex100";
+import ZipSearch from "./pages/ZipSearch";
+
+const App: React.FC = () => {
+  return (
+    <>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/s20" element={<S20attributeChange />} />
+          <Route path="/s30" element={<S30onClickEvent />} />
+          <Route path="/ex30" element={<Ex30 />} />
+          <Route path="/ex50" element={<Ex50 />} />
+          <Route path="/ex70" element={<Ex70 />} />
+          <Route path="/ex80" element={<Ex80 />} />
+          <Route path="/ex90" element={<Ex90 />} />
+          <Route path="/ex100" element={<Ex100 />} />
+          <Route path="/zipsearch" element={<ZipSearch />} />
+        </Routes>
+      </Router>
+    </>
+  );
+};
+
+export default App;
