@@ -1,5 +1,5 @@
 // APIのレスポンスの型定義（画像に合わせて更新）
-export type AddressResponse = {
+export interface AddressResponse {
   status: number;
   items: {
     address: string;
@@ -7,4 +7,4 @@ export type AddressResponse = {
     pref: string;
     zipcode: string;
   }[];
-};
+}

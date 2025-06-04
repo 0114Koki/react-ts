@@ -24,6 +24,20 @@ const Header: React.FC = () => {
       <Link to="/ex100">Ex100</Link>
       <span> / </span>
       <Link to="/zipsearch">ZipSearch</Link>
+      <span> / </span>
+      <Link to="/ex110">Ex110</Link>
+      <span> / </span>
+      <Link to="/ex120">Ex120</Link>
+      <span> / </span>
+      <Link to="/ex130">Ex130</Link>
+      <span> / </span>
+      <Link to="/ex140">Ex140</Link>
+      <span> / </span>
+      <Link to="/ex170">Ex170</Link>
+      <span> / </span>
+      <Link to="/ex180">Ex180</Link>
+      <span> / </span>
+      <Link to="/s220">S220</Link>
     </nav>
   );
 };
